@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sss.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+
+
+    <div class='tabbed round'>
+      <ul>
+        <li>Testimonies</li>
+        <li>Questions</li>
+        <li class='active'>Comments</li>
+      </ul>
+    </div>
+   
+    
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  var tabs = document.querySelectorAll('.tabbed li');
+
+  for (var i = 0, len = tabs.length; i < len; i++) {
+    tabs[i].addEventListener("click", function() {
+      if (this.classList.contains('active'))
+        return;
+
+      var parent = this.parentNode,
+          innerTabs = parent.querySelectorAll('li');
+
+      for (var index = 0, iLen = innerTabs.length; index < iLen; index++) {
+        innerTabs[index].classList.remove('active');
+      }
+
+      this.classList.add('active');
+    });
+  }
+
+});
+
+</script>
+
+</body>
+</html>

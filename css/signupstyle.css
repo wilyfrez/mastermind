@@ -1,0 +1,62 @@
+
+body{
+
+}
+
+
+.sign-in {
+
+   width: 350px;
+    min-width: 310px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);   
+    padding-bottom: 25px;
+ }
+
+.sign-in-btn{
+    margin: 10px 0;
+    padding: 8px 0;
+    
+}
+ .input{
+     margin-bottom: 15px;
+ }
+    
+    .caption {
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    }
+    
+.tab {
+    text-align: center;
+    
+}
+
+form{
+    padding-top: 15px;
+}
+
+.nav-item{
+    background-color: #F6F8FA;   
+}
+
+.nav-link.active{
+}
+.tab a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: gray;
+}   
+    
+    .rounded-input {
+    border: 1px solid rgb(183, 183, 185);
+    border-radius: 5px 15px 15px;
+    }
+    
+    label {
+    font-weight: 500;
+    font-size: 0.85rem;
+    }
+    

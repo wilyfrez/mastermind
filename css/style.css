@@ -1,0 +1,352 @@
+/*===========================================*\
+| Start Color variables
+ font-family: 'Simonetta', ;
+\*===========================================*/
+
+:root{
+  --primary-color: #1e6ef2;
+  --primary-light-color: #0092fd;
+  --dark-blue-color: #1f1f29;
+  --dark-color: #15161D;
+  --black-color: #000;
+  --nav-blue: #0b85f9;
+  --white-color: #FFF;
+  --gray-color: #8D99AE;
+  --light-color: #F6F8FA;
+}
+/*===========================================*\
+| End Color variables
+\*===========================================*/
+
+
+/*===========================================*\
+| Start General Attributes
+\*===========================================*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--dark-text-color);
+  background-color:#F0F4F4;
+  overflow-x: hidden;
+
+}
+
+.main{
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 30px;
+ 
+}
+
+
+/*===========================================*\
+| End General Attributes
+\*===========================================*/
+
+
+/*===========================================*\
+| Start Navitation Bar 
+background-image: linear-gradient(to right, var(--primary-color), var(--primary-light-color));
+\*===========================================*/
+  .navbar{  
+    background-color: var(--primary-light-color);
+    padding: 10px 100px;
+    width: 100%;
+  } 
+
+  .navbar-brand h4{
+    font-weight: 600;
+    font-size: 2.0rem;
+  }
+
+/*===========================================*\
+| End Navigation Bar
+\*===========================================*/
+
+/*===========================================*\
+| Start Video Section
+\*===========================================*/
+.video{
+  background-color: var(--black-color);
+}
+
+.video-wrapper{
+  background-color: var(--black-color);
+  
+}
+
+.topic{
+  margin: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.topic p span{
+  font-size: 1.0rem;
+}
+
+/*===========================================*\
+| End Video Section
+\*===========================================*/
+
+/*===========================================*\
+| Start Tab header 
+\*===========================================*/
+
+  ul.nav-tabs{
+  
+    margin-right: 20px;
+  }
+  .nav-tabs .nav-item a.nav-link {
+    color: var(--black-color);
+    font-weight: 500;
+  }
+
+  .nav-tabs .nav-item a.nav-link.active{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+    border-bottom-color: #F0F4F4;
+  }
+/*===========================================*\
+| End Tab header 
+\*===========================================*/
+
+
+
+/*===========================================*\
+| Start Comment Section 
+\*===========================================*/
+
+.comment-header{
+  border-bottom: 2px solid  var(--light-color);
+}
+
+.comment{
+   position: relative;
+    width: 100%;
+    border-radius: 0 15px 15px 15px;
+   background-color: var(--white-color); 
+    margin: 10px 0;
+  }
+
+
+.comment-hr{
+    border: 0;
+    margin: 2px;
+    height: 0.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(92, 124, 167, 0.75), rgba(0, 0, 0, 0));
+}
+
+.comment-name{
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 10px;
+}
+
+.comment-country{
+  
+  font-size: 0.7rem;
+  padding: 1px 4px;
+  color: gray;
+  border-radius: 4px;
+  margin: 0 4px;
+  text-align: center;
+}
+
+.comment-time{
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.comment-body{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color:var(--dark-blue-color);
+  padding: 4px 10px 10px 10px;
+}
+
+.comment-list{
+  overflow-y: auto;
+  margin-bottom: 10px;
+ padding-right: 5px;
+}
+.comment-input{
+  border-radius: 10px;
+  font-size: .85rem;
+  padding: 4px 10px;
+  border-color: rgb(190, 187, 187);
+}
+
+.post-comment-btn{
+  background-color: var(--nav-blue);
+  color: var(--white-color);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 6px;
+}
+/*===========================================*\
+| End Comment section
+\*===========================================*/
+
+/*===========================================*\
+| start footer section
+\*===========================================*/
+
+
+.footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: var(--light-color);
+  height:70px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/*===========================================*\
+| End footer section
+\*===========================================*/
+
+
+/*===========================================*\
+| Media Queries
+\*===========================================*/
+
+@media (max-width: 1300px) {
+  .nav-tabs .nav-item a.nav-link{
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .comment-body {
+    font-size: 0.85rem;
+  }
+
+  .comment-name{ 
+    font-size: 0.7rem;
+  }
+  
+  .comment-time, .comment-country{
+    font-size: 0.65rem;
+  }
+
+}
+
+@media (max-width: 1030px) {
+  .nav-tabs .nav-item a.nav-link{
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .tab-section.col-lg-4, .video-section.col-lg-8{
+    padding: 0 4px;
+  }
+
+  .comment-body {
+    font-size: 0.75rem;
+  }
+
+  .comment-name{ 
+    font-size: 0.67rem;
+  }
+  
+  .comment-time, .comment-country{
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .nav-tabs .nav-item a.nav-link{
+    font-size: 1.0rem;
+    padding: 6px 12px;
+  }
+
+  .comment-body {
+    font-size: 0.9rem;
+  }
+
+  .comment-name{ 
+    font-size: 0.8rem;
+  }
+  
+  .comment-time, .comment-country{
+    font-size: 0.5rem;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+
+  .navbar{  
+    position: fixed;
+    top: 0;
+    padding: 4px;
+    z-index: 2;
+  } 
+
+  .video-wrapper{
+    position: fixed;
+    margin-top: 35px;
+    z-index: 1;
+  }
+.topic{
+  display: none;
+}
+
+.tab-section.col-lg-4{
+  margin-top: 300px;
+
+}
+
+.tab-content{
+  padding-top: 5px;
+  margin-left: 4px;
+}
+
+.nav-tabs .nav-item a.nav-link{
+  font-size: 0.8rem;
+  padding: 4px 8px;
+}
+
+.tab-section.col-lg-4, .video-section.col-lg-8{
+  padding: 0 4px;
+}
+
+.comment-body {
+  font-size: 0.75rem;
+}
+
+.comment-name{ 
+  font-size: 0.67rem;
+}
+
+.comment-time, .comment-country{
+  font-size: 0.6rem;
+}
+
+}
+
+@media  (max-width: 375px) {
+  .tab-section {
+    margin-top: 275px;
+  }
+  
+}
+
+@media  (max-width: 320px) {
+  .tab-section {
+    margin-top: 245px;
+  }
+  
+}
