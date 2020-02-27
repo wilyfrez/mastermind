@@ -40,7 +40,7 @@ body {
   width: 95%;
   margin: 0 auto;
   padding-top: 30px;
- 
+
 }
 
 
@@ -193,7 +193,6 @@ outline: none;
   margin-right: 10px;
   background-color: white;
   padding: 5px;
-
   border-radius: 10px;
 }
 
@@ -280,7 +279,8 @@ outline: none;
   }
 
 .new-comment{
-  margin: 0 8px;
+  margin: 4px 8px;
+  
 }
   .comment-body {
     font-size: 0.9rem;
