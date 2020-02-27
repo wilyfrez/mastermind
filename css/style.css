@@ -183,18 +183,18 @@ background-image: linear-gradient(to right, var(--primary-color), var(--primary-
  padding-right: 5px;
 }
 .comment-input{
-
   font-size: .85rem;
   padding: 4px 10px;
-border: 1px solid gray;
-border-width: 0 0 1px 0;
+border: none;
 outline: none;
 }
 
 .new-comment{
   margin-right: 10px;
   background-color: white;
-  padding: 10px;
+  padding: 5px;
+
+  border-radius: 10px;
 }
 
 .new-comment i{
@@ -279,23 +279,17 @@ outline: none;
     padding: 6px 12px;
   }
 
-
+.new-comment{
+  margin: 0 8px;
+}
   .comment-body {
     font-size: 0.9rem;
   }
 
-  #comment{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #comment#commentList {
-    order: 2;
-  }
-  
-  #comment#newComment {
-    order: 1;
-  }
+.comment-list{
+  padding-left: 8px;
+ 
+}
 
   .comment-name{ 
     font-size: 0.8rem;
@@ -375,12 +369,16 @@ outline: none;
   padding: 0 4px;
 }
 
+.comment{
+  margin: 5px 0;
+}
 .comment-body {
   font-size: 0.75rem;
+  padding-bottom: 5px;
 }
 
 .comment-name{ 
-  font-size: 0.67rem;
+  font-size: 0.65rem;
 }
 
 .comment-time, .comment-country{
@@ -392,6 +390,18 @@ outline: none;
 @media  (max-width: 375px) {
   .tab-section.col-lg-4 {
     margin-top: 255px;
+  }
+
+  .comment-body {
+    font-size: 0.7rem;
+  }
+  
+  .comment-name{ 
+    font-size: 0.63rem;
+  }
+  
+  .comment-time, .comment-country{
+    font-size: 0.57rem;
   }
   
 }
