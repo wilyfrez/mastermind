@@ -286,7 +286,35 @@ background-image: linear-gradient(to right, var(--primary-color), var(--primary-
 
 }
 
+@media (max-width: 768px) {
+
+  .navbar-brand h4{
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+
+.main{
+  padding-top: 0;
+}
+
+.video-section.col-lg-8{
+  padding: 0;
+  
+}
+.video-wrapper{
+  background-color: rgba(240, 244, 244, 0) ;
+}
+
+.video{
+  background-color: #F0F4F4 ;
+  width: 100;
+}
+}
+
 @media (max-width: 425px) {
+  .navbar-brand h4{
+    font-size: 1.3rem;
+  }
 
   .navbar{  
     position: fixed;
@@ -305,7 +333,7 @@ background-image: linear-gradient(to right, var(--primary-color), var(--primary-
 }
 
 .tab-section.col-lg-4{
-  margin-top: 300px;
+  margin-top: 285px;
 
 }
 
@@ -338,15 +366,15 @@ background-image: linear-gradient(to right, var(--primary-color), var(--primary-
 }
 
 @media  (max-width: 375px) {
-  .tab-section {
-    margin-top: 275px;
+  .tab-section.col-lg-4 {
+    margin-top: 255px;
   }
   
 }
 
 @media  (max-width: 320px) {
-  .tab-section {
-    margin-top: 245px;
+  .tab-section.col-lg-4 {
+    margin-top: 230px;
   }
   
 }
