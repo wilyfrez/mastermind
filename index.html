@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+   
+
     <link rel="stylesheet" href="css/style.css">
     <title>Master Mind</title>
+      <!-- Place your kit's code here -->
+      <script src="https://kit.fontawesome.com/522068cb9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -43,7 +46,8 @@
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link  " href="">Contact
+                    <a class="nav-link  " href="">Contact   
+                               
                     </a>
                 </li>
 
@@ -58,13 +62,12 @@
 
     </nav>
     <!--End Navigation Bar-->
-
+    
     <!--Start Main Layout-->
     <div class="main">
 
-
         <!--Start row-->
-        <div class="row">
+        <div class="row yes">
             <!--Start Video Section-->
             <div class="video-section col-lg-8">
                 <div class="video-wrapper">
@@ -98,9 +101,9 @@
 
                 <!--Start Tab Content-->
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                    <div class="tab-pane fade show active " id="comment" role="tabpanel" aria-labelledby="comment-tab">
                         <!--Start Comment list-->
-                        <div class="comment-list">
+                        <div id="commentList" class="comment-list tab-height ">
                             <!--End Comment -->
                             <div class="comment ">
                                 <div class="comment-header">
@@ -240,11 +243,11 @@
                             <!--End Comment -->
                         </div>
                         <!--End Comment list-->
-                        <div class="new-comment">
+                        <div id="newComment" class="new-comment d-flex flex-row align-items-center ">
+                                  
                             <textarea name="" id="" rows="2" class="comment-input w-100"
-                                placeholder="Enter your comment"></textarea>
-                            <button type="button" class="btn post-comment-btn float-right shadow-sm">Post
-                                Comment</button>
+                                placeholder="Chat here"></textarea>
+                            <i class="fab fa-telegram-plane"></i>  
                         </div>
                     </div>
 
@@ -291,7 +294,14 @@
     <!--Script-->
     <script>
         $(document).ready(function () {
-            $(".comment-list").css("height", $(".video").height() - 100);
+
+            if($(window).width() >991) {
+                $(".tab-height").css("height", $(".video").height() - 30);
+            }else{
+                $(".tab-height").css("min-height", 200);
+                $(".tab-height").css("max-height", 500);
+            }
+           
         });
     </script>
 </body>
