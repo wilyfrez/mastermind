@@ -67,6 +67,40 @@ background-image: linear-gradient(to right, var(--primary-color), var(--primary-
     font-size: 2.0rem;
   }
 
+  .nav-item a, .dropdown button{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+
+
+  .navbar-nav li.real-nav a{
+    position: relative;
+  }
+  
+  .navbar-nav li.real-nav { 
+    position: relative; 
+  }
+  
+  .navbar-nav li.real-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: var(--primary-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navbar-nav li.real-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+
 /*===========================================*\
 | End Navigation Bar
 \*===========================================*/
@@ -305,12 +339,19 @@ outline: none;
 }
 
 @media (max-width: 768px) {
+ 
+  .navbar{  
+    padding: 10px 20px;
+  } 
 
   .navbar-brand h4{
     font-size: 1.3rem;
     margin-bottom: 4px;
   }
-
+  .nav-item a, .dropdown button{
+    font-size: 0.85rem;
+  }
+ 
 .main{
   padding-top: 0;
 }
@@ -330,6 +371,12 @@ outline: none;
 }
 
 @media (max-width: 425px) {
+  .navbar-nav .nav-link{
+    padding-left: 12px;
+  }
+  .nav-item a, .dropdown button{
+    font-size: 0.8rem;
+  }
   .navbar-brand h4{
     font-size: 1.3rem;
   }
@@ -337,10 +384,13 @@ outline: none;
   .navbar{  
     position: fixed;
     top: 0;
-    padding: 4px;
+    padding: 4px 12px;
     z-index: 2;
   } 
 
+  button.navbar-toggler{
+    padding: 4px;
+  }
   .video-wrapper{
     position: fixed;
     margin-top: 35px;
