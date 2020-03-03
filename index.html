@@ -20,7 +20,7 @@
 
 <body>
     <!--Start Navigation Bar-->
-    <nav class="navbar navbar-expand-md bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md bg-white navbar-light shadow-sm">
 
         <!--Start Logo-->
         <a class="navbar-brand" href="index.html">
@@ -40,21 +40,33 @@
 
             <ul class="navbar-nav ml-auto ">
 
-                <li class="nav-item active">
+                <li class="nav-item real-nav">
                     <a class="nav-link  " href="">About
                     </a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link  " href="">Contact   
-                               
+                <li class="nav-item real-nav ">
+                    <a class="nav-link  " href="">Contact
+
                     </a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link  " href="">You're Welcome
+                <li class="nav-item  ">
+                    <a class="nav-link " href="">You're Welcome
                     </a>
                 </li>
+
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pastor Peter
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">                    
+                        <button class="dropdown-item" type="button">View Profile</button>
+                        <button class="dropdown-item" type="button">Logout</button>
+                    </div>
+                </div>
 
             </ul>
         </div>
